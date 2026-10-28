@@ -6,7 +6,7 @@
           <p>SYSTEM ONLINE</p>
           <p>Research Station ECHO</p>
           <button id="start-button">START GAME</button>
-            <div hidden>
+            <div id="game-menu" hidden>
               <button>NEW GAME</button>
               <button>CONTINUE</button>
               <button>LANGUAGE</button>
@@ -14,7 +14,9 @@
           <script>
             console.log("SYSTEM ONLINE");
             const startButton = document.getElementById("start-button");
+            const gameMenu = document.getElementById("game-menu");
             console.log(startButton);
+            startButton.addEventListener("click", function () {gameMenu.hidden = false;});
           </script>
         </body>
 </html>
