@@ -3,23 +3,47 @@
     <head>
       <title>PROJECT ECHO | ECHO-7</title>
       <style>
+        body {
+          background-color: #111111;
+          color: white;
+          font-family: monospace;
+        }
+        .computer {
+          background-color: #000000;
+          border: 8px solid #222222;
+          border-radius: 12px;
+          padding: 12px;
+          max-width: 700px;
+          margin: 40px auto;
+        }
+        .screen {
+          background-color: #0000AA;
+          color: white;
+          border: 3px solid #000000;
+          padding: 24px;
+          min-height: 300px;
+        }
         #system-status {
-          color: #00AA55;
-          border: 2px solid #000000;
+          color: white;
+          border: 1px solid white;
           padding: 8px;
         }
       </style>
     </head>
         <body>
-          <h1>PROJECT ECHO</h1>
-          <p id="system-status">SYSTEM ONLINE</p>
-          <p>Research Station ECHO</p>
-          <button id="start-button">START GAME</button>
-            <div id="game-menu" hidden>
-              <button>NEW GAME</button>
-              <button>CONTINUE</button>
-              <button>LANGUAGE</button>
+          <div class="computer">
+            <div class="screen">
+              <h1>PROJECT ECHO</h1>
+              <p id="system-status">SYSTEM ONLINE</p>
+              <p>Research Station ECHO</p>
+              <button id="start-button">START GAME</button>
+              <div id="game-menu" hidden>
+                <button>NEW GAME</button>
+                <button>CONTINUE</button>
+                <button>LANGUAGE</button>
+              </div>
             </div>
+          </div>
           <script>
             console.log("SYSTEM ONLINE");
             const startButton = document.getElementById("start-button");
