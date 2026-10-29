@@ -23,7 +23,8 @@
           padding: 24px;
           height: 420px;
           box-sizing: border-box;
-          overflow-y: auto;
+          position: relative;
+          overflow: hidden;
         }
         #system-status {
           color: white;
@@ -32,11 +33,13 @@
           animation: status-flicker 4s infinite;
         }
         #game-menu {
-          margin-top: 24px;
+          position: absolute;
+          top: 210px;
+          left: 24px;
+          right: 24px;
           display: flex;
           flex-direction: column;
           gap: 14px;
-          max-width: 260px;
         }
         #game-menu[hidden] {
           display: none;
